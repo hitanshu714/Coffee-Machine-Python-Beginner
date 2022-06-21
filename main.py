@@ -90,8 +90,8 @@ def change_resources(order):
 
 
 def make_coffee(order):
-    enough = check_resources(order)
-    if enough != "0":
+    element = check_resources(order)
+    if element != "0":
         print (f"Insufficient {element}, cannot process order at this time.")
     else:
         is_payment = process_coins(order)
